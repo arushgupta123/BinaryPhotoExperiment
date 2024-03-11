@@ -10,4 +10,8 @@ function uploadFile(inputElement) {
      console.log('Encoded Binary File String:', binaryBlob);
   }
   reader.readAsDataURL(file);
+
+  document.getElementById("myimg").src = "data:image/jpeg;base64," + binaryBlob;
 }
+
+//<img src="data:image/jpeg;base64,{binary data}" />
