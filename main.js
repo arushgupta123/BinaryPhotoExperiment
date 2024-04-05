@@ -8,7 +8,7 @@ function uploadFile(inputElement) {
     var data=(reader.result).split(',')[1];
      var binaryBlob = atob(data);
      console.log('Encoded Binary File String:', binaryBlob);
-    document.getElementById("myimg").src = "data:image/jpeg;base64," + binaryBlob;
+    document.getElementById("myimg").src = "data:image/jpg;base64," + binaryBlob;
   console.log(document.getElementById("myimg").src)
   }
   reader.readAsDataURL(file);
